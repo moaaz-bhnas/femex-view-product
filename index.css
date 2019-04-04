@@ -1,0 +1,69 @@
+/* Colors
+- cart image                     : 23272D
+- body text                      : 24282D
+- breadcrumb bar background color: 23282D
+- down arrow background          : 15171a
+- jumbotron background           : 15171a
+*/
+
+/* Breakpoints
+- small : 576px
+- medium: 768px
+- large : 992px
+- xLarge: 1200px
+*/
+
+body {
+  color: #24282D;
+}
+
+/* links */
+.no-underline:hover {
+  text-decoration: none;
+}
+
+/* ===========================
+Navbar 
+============================== */
+.navbar__searchInput {
+  border: none;
+}
+
+/* cart/user icons */
+.navbar__cartIcon,
+.navbar__userIcon {
+  color: rgb(36, 40, 45);
+  transition: color .1s;
+}
+
+.navbar__userLink:hover .navbar__cartIcon,
+.navbar__userLink:hover .navbar__userIcon,
+.navbar__userLink:focus .navbar__cartIcon,
+.navbar__userLink:focus .navbar__userIcon {
+  color: rgba(36, 40, 45, .8);
+}
+
+/* ===================================
+Breadcrumb
+====================================== */
+.breadcrumbBar {
+  background-color: #23282D;
+  z-index: 1;
+}
+
+/* Arrows */
+.breadcrumbBar__downArrowLink {
+  background-color: #15171a;
+}
+
+.breadcrumbBar__leftArrowLink,
+.breadcrumbBar__downArrowLink {
+  transition: color .1s;
+}
+
+.breadcrumbBar__leftArrowLink:hover,
+.breadcrumbBar__downArrowLink:hover,
+.breadcrumbBar__leftArrowLink:focus,
+.breadcrumbBar__downArrowLink:focus {
+  color: rgba(255, 255, 255, .5)!important;
+}
