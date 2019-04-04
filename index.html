@@ -59,7 +59,7 @@
           <i class="fas fa-chevron-left fa-lg" aria-hidden="true"></i>
         </a>
         <img class="mr-4 ml-3" src="img/logo-2.png" alt="Logo">
-        <a href="#" class="rounded-circle p-4 breadcrumbBar__downArrowLink d-flex justify-content-center align-items-center text-white no-underline">
+        <a href="#" class="rounded-circle p-4 breadcrumbBar__downArrowLink d-flex justify-content-center align-items-center text-white link_decorationOnHover_none">
           <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </a>
       </div> <!-- left -->
@@ -74,23 +74,76 @@
     </div> <!-- container -->
   </div> <!-- breadcrumbbar -->
 
-  <div class="banner mb-5">
+  <div class="banner mb-3">
     <img class="img-fluid" src="https://via.placeholder.com/2000x700" alt="">
   </div> <!-- banner -->
 
   <article class="product">
-    <header class="container">
-      <div class="row justify-content-between pb-4">
-        <div class="col-lg-6">
+    <header class="container  py-4">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
           <h2 class="mb-2">Bounce Back Floral Khaki Green Denim Shorts</h2>
           <s class="product__oldPrice mr-3">1950$</s>
           <span class="product__newPrice">1500$</span>
-        </div>
-        <div class="col-lg-4">
-          <img class="img-fluid" src="https://via.placeholder.com/800x300" alt="">
-        </div>
-      </div>
+        </div> <!-- data -->
+        <div class="col-md-6 col-lg-4">
+          <img class="img-fluid" src="https://via.placeholder.com/800x250" alt="">
+        </div> <!-- img -->
+      </div> <!-- row -->
     </header>
+
+    <hr>
+
+    <div class="container py-4">
+      <div class="row justify-content-between">
+        <div class="col-md-6 mb-5">
+          <p class="product__description mb-4">
+            At totam ut quis sapiente qui facilis. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem.
+          </p>
+          </p>
+          <a class="link_color_inherited link_fontWeight_bold link_decorationOnHover_none link_decoration_bottomBorder py-1" href="#">More details</a>
+        </div>
+        <form class="col-md-5">
+          <div class="form-group mb-1">
+            <label class="customSelectContainer">
+              <span class="customSelectContainer__label position-absolute">Select Size</span>
+              <select class="customSelect">
+                <option selected>xxs</option>
+                <option>xs</option>
+                <option>s</option>
+                <option>m</option>
+                <option>l</option>
+                <option>xl</option>
+                <option>xxl</option>
+              </select>
+              <i class="fas fa-chevron-down customSelectContainer__downArrow position-absolute" aria-hidden="true"></i>
+            </label>
+          </div>
+          <div class="form-group mb-1">
+            <label class="customSelectContainer">
+              <span class="customSelectContainer__label position-absolute">Select Quantity</span>
+              <select class="customSelect">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option selected>5</option>
+                <option>6</option>
+                <option>7</option>
+              </select>
+              <i class="fas fa-chevron-down customSelectContainer__downArrow position-absolute" aria-hidden="true"></i>
+            </label>
+          </div>
+          <button class="productForm__btn productForm__btn_bg_black mb-2">
+            <i class="fas fa-shopping-cart fa-lg mr-3" aria-hidden="true"></i>
+            Add to cart
+          </button>
+          <button class="productForm__btn">
+            Check Availability at your nearest store
+          </button>
+        </form>
+      </div> <!-- row -->
+    </div>
   </article>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>

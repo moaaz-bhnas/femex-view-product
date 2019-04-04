@@ -5,6 +5,7 @@
 - down arrow background          : 15171a
 - jumbotron background           : 15171a
 - grey                           : 7D7F81
+- select element grey            : 65686B
 */
 
 /* Breakpoints
@@ -19,8 +20,66 @@ body {
 }
 
 /* links */
-.no-underline:hover {
+/* modifiers */
+.link_color_inherited {
+  color: inherit;
+}
+.link_decorationOnHover_none:hover {
   text-decoration: none;
+}
+.link_decoration_bottomBorder {
+  border-bottom: 1px solid;
+}
+.link_fontWeight_bold {
+  font-weight: 500;
+}
+
+/* select */
+.customSelectContainer {
+  display: inline-block;
+  width: 100%;
+  border-radius: .15rem;
+  position: relative;
+}
+.customSelectContainer__label {
+  top: .4rem;
+  left: .9rem;
+}
+.customSelect {
+  color: #65686B;
+  width: 100%;
+  padding: 1.7rem 0 .4rem 1rem;
+  -webkit-appearance: none;
+
+  transition: box-shadow .15s;
+}
+.customSelect:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.customSelectContainer__downArrow {
+  right: .8rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* button */
+.productForm__btn {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: .15rem;
+}
+/* modifiers */
+.productForm__btn_bg_black {
+  color: #fff;
+  background-color: #111;
+}
+.productForm__btn_bg_grey {
+  background-color: #E5E5E5;
 }
 
 /* ===========================
@@ -80,4 +139,7 @@ Product
 .product__newPrice {
   font-size: 1.5rem;
   font-weight: 500;
+}
+.product__description {
+  line-height: 1.7;
 }
