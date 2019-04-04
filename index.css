@@ -4,6 +4,7 @@
 - breadcrumb bar background color: 23282D
 - down arrow background          : 15171a
 - jumbotron background           : 15171a
+- grey                           : 7D7F81
 */
 
 /* Breakpoints
@@ -66,4 +67,17 @@ Breadcrumb
 .breadcrumbBar__leftArrowLink:focus,
 .breadcrumbBar__downArrowLink:focus {
   color: rgba(255, 255, 255, .5)!important;
+}
+
+/* ===================================
+Product
+====================================== */
+.product__oldPrice {
+  color: #7D7F81;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.product__newPrice {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
