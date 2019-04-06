@@ -43,10 +43,10 @@
           <input class="navbar__searchInput" id="navbar__searchInput" type="search" placeholder="Search..." aria-label="Search">
         </form> <!-- search form -->
         <span class="navbar-text d-flex">
-          <a href="#" class="p-2 navbar__userLink">
+          <a href="#" class="p-2 navbar__iconLink">
             <i class="navbar__cartIcon fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
           </a>
-          <a href="#" class="p-2 navbar__userLink">
+          <a href="#" class="p-2 navbar__iconLink">
             <i class="navbar__userIcon fas fa-user fa-lg" aria-hidden="true"></i>
           </a>
         </span>
@@ -57,11 +57,11 @@
   <div class="breadcrumbBar py-3 position-relative">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div class="d-flex align-items-center mb-3  mb-md-0">
-        <a href="#" class="breadcrumbBar__leftArrowLink p-3 text-white" aria-label="left arrow">
+        <a href="#" class="breadcrumbBar__arrowLink breadcrumbBar__leftArrowLink p-3" aria-label="left arrow">
           <i class="fas fa-chevron-left fa-lg" aria-hidden="true"></i>
         </a>
         <img class="mr-4 ml-3" src="img/logo-2.png" alt="Logo">
-        <a href="#" class="rounded-circle p-4 breadcrumbBar__downArrowLink d-flex justify-content-center align-items-center text-white link_decorationOnHover_none">
+        <a href="#" class="breadcrumbBar__arrowLink breadcrumbBar__downArrowLink rounded-circle p-4 d-flex justify-content-center align-items-center link_decorationOnHover_none">
           <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </a>
       </div> <!-- left -->
@@ -76,11 +76,11 @@
     </div> <!-- container -->
   </div> <!-- breadcrumbbar -->
 
-  <div class="banner mb-3">
+  <div class="banner">
     <img class="img-fluid" src="https://via.placeholder.com/2000x700" alt="">
   </div> <!-- banner -->
 
-  <article class="product">
+  <article class="product py-5">
     <header class="container  py-4">
       <div class="row justify-content-between">
         <div class="col-md-6">
@@ -92,7 +92,7 @@
           <img class="img-fluid" src="https://via.placeholder.com/800x250" alt="">
         </div> <!-- img -->
       </div> <!-- row -->
-    </header>
+    </header> <!-- product header -->
 
     <hr>
 
@@ -103,13 +103,13 @@
             At totam ut quis sapiente qui facilis. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem.
           </p>
           </p>
-          <a class="link_color_inherited link_fontWeight_bold link_decorationOnHover_none link_decoration_bottomBorder py-1" href="#">More details</a>
+          <a class="link_color_inherited font-weight-md link_decorationOnHover_none link_decoration_bottomBorder py-1" href="#">More details</a>
         </div>
         <form class="col-md-5">
           <div class="form-group mb-1">
-            <label class="customSelectContainer">
-              <span class="customSelectContainer__label position-absolute">Select Size</span>
-              <select class="customSelect">
+            <label class="selectContainer">
+              <span class="selectContainer__label position-absolute">Select Size</span>
+              <select class="select">
                 <option selected>xxs</option>
                 <option>xs</option>
                 <option>s</option>
@@ -118,13 +118,13 @@
                 <option>xl</option>
                 <option>xxl</option>
               </select>
-              <i class="fas fa-chevron-down customSelectContainer__downArrow position-absolute" aria-hidden="true"></i>
+              <i class="fas fa-chevron-down selectContainer__downArrow position-absolute" aria-hidden="true"></i>
             </label>
           </div>
           <div class="form-group mb-1">
-            <label class="customSelectContainer">
-              <span class="customSelectContainer__label position-absolute">Select Quantity</span>
-              <select class="customSelect">
+            <label class="selectContainer">
+              <span class="selectContainer__label position-absolute">Select Quantity</span>
+              <select class="select">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -133,7 +133,7 @@
                 <option>6</option>
                 <option>7</option>
               </select>
-              <i class="fas fa-chevron-down customSelectContainer__downArrow position-absolute" aria-hidden="true"></i>
+              <i class="fas fa-chevron-down selectContainer__downArrow position-absolute" aria-hidden="true"></i>
             </label>
           </div>
           <button class="productForm__btn productForm__btn_bg_black mb-2">
@@ -145,7 +145,7 @@
           </button>
         </form>
       </div> <!-- row -->
-    </div>
+    </div> <!-- details & form filters -->
 
     <hr>
     
@@ -155,66 +155,66 @@
         <span class="relatedProducts__titleWord2 text-uppercase d-block">Products</span>
       </h3>
 
-      <ul class="row justify-content-center mt-5 relatedProducts__list">
-        <li class="relatedProduct col-8 col-sm-6 col-md-3 mb-4">
-          <img src="img/gallery-1.png" alt="Gallery image" class="relatedProduct__image mb-2">
-          <span class="relatedProduct__collection">Le Collezioni</span>
-          <h3 class="relatedProduct__name">Cadapetra Hoodie</h3>
-          <span class="relatedProduct__price">99.95$</span>
+      <ul class="list row justify-content-center mt-5 relatedProducts__list">
+        <li class="productItem col-8 col-sm-6 col-md-3 mb-4">
+          <img src="img/gallery-1.png" alt="Gallery image" class="productItem__image mb-2">
+          <span class="productItem__collection d-inline-block position-relative font-weight-bold">Le Collezioni</span>
+          <h3 class="productItem__name font-weight-md mb-0">Cadapetra Hoodie</h3>
+          <span class="productItem__price font-weight-md">99.95$</span>
         </li>
-        <li class="relatedProduct col-8 col-sm-6 col-md-3 mb-4">
-          <img src="img/gallery-2.png" alt="Gallery image" class="relatedProduct__image mb-2">
-          <span class="relatedProduct__collection">Le Collezioni</span>
-          <h3 class="relatedProduct__name">Cadapetra Hoodie</h3>
-          <span class="relatedProduct__price">99.95$</span>
+        <li class="productItem col-8 col-sm-6 col-md-3 mb-4">
+          <img src="img/gallery-2.png" alt="Gallery image" class="productItem__image mb-2">
+          <span class="productItem__collection d-inline-block position-relative font-weight-bold">Le Collezioni</span>
+          <h3 class="productItem__name font-weight-md mb-0">Cadapetra Hoodie</h3>
+          <span class="productItem__price font-weight-md">99.95$</span>
         </li>
-        <li class="relatedProduct col-8 col-sm-6 col-md-3 mb-4">
-          <img src="img/gallery-3.png" alt="Gallery image" class="relatedProduct__image mb-2">
-          <span class="relatedProduct__collection">Le Collezioni</span>
-          <h3 class="relatedProduct__name">Cadapetra Hoodie</h3>
-          <span class="relatedProduct__price">99.95$</span>
+        <li class="productItem col-8 col-sm-6 col-md-3 mb-4">
+          <img src="img/gallery-3.png" alt="Gallery image" class="productItem__image mb-2">
+          <span class="productItem__collection d-inline-block position-relative font-weight-bold">Le Collezioni</span>
+          <h3 class="productItem__name font-weight-md mb-0">Cadapetra Hoodie</h3>
+          <span class="productItem__price font-weight-md">99.95$</span>
         </li>
-        <li class="relatedProduct col-8 col-sm-6 col-md-3 mb-4">
-          <img src="img/gallery-4.png" alt="Gallery image" class="relatedProduct__image mb-2">
-          <span class="relatedProduct__collection">Le Collezioni</span>
-          <h3 class="relatedProduct__name">Cadapetra Hoodie</h3>
-          <span class="relatedProduct__price">99.95$</span>
+        <li class="productItem col-8 col-sm-6 col-md-3 mb-4">
+          <img src="img/gallery-4.png" alt="Gallery image" class="productItem__image mb-2">
+          <span class="productItem__collection d-inline-block position-relative font-weight-bold">Le Collezioni</span>
+          <h3 class="productItem__name font-weight-md mb-0">Cadapetra Hoodie</h3>
+          <span class="productItem__price font-weight-md">99.95$</span>
         </li>
-        <li class="relatedProduct col-8 col-sm-6 col-md-3 mb-4">
-          <img src="img/gallery-5.png" alt="Gallery image" class="relatedProduct__image mb-2">
-          <span class="relatedProduct__collection">Le Collezioni</span>
-          <h3 class="relatedProduct__name">Cadapetra Hoodie</h3>
-          <span class="relatedProduct__price">99.95$</span>
+        <li class="productItem col-8 col-sm-6 col-md-3 mb-4">
+          <img src="img/gallery-5.png" alt="Gallery image" class="productItem__image mb-2">
+          <span class="productItem__collection d-inline-block position-relative font-weight-bold">Le Collezioni</span>
+          <h3 class="productItem__name font-weight-md mb-0">Cadapetra Hoodie</h3>
+          <span class="productItem__price font-weight-md">99.95$</span>
         </li>
-        <li class="relatedProduct col-8 col-sm-6 col-md-3 mb-4">
-          <img src="img/gallery-6.png" alt="Gallery image" class="relatedProduct__image mb-2">
-          <span class="relatedProduct__collection">Le Collezioni</span>
-          <h3 class="relatedProduct__name">Cadapetra Hoodie</h3>
-          <span class="relatedProduct__price">99.95$</span>
+        <li class="productItem col-8 col-sm-6 col-md-3 mb-4">
+          <img src="img/gallery-6.png" alt="Gallery image" class="productItem__image mb-2">
+          <span class="productItem__collection d-inline-block position-relative font-weight-bold">Le Collezioni</span>
+          <h3 class="productItem__name font-weight-md mb-0">Cadapetra Hoodie</h3>
+          <span class="productItem__price font-weight-md">99.95$</span>
         </li>
-        <li class="relatedProduct col-8 col-sm-6 col-md-3 mb-4">
-          <img src="img/gallery-7.png" alt="Gallery image" class="relatedProduct__image mb-2">
-          <span class="relatedProduct__collection">Le Collezioni</span>
-          <h3 class="relatedProduct__name">Cadapetra Hoodie</h3>
-          <span class="relatedProduct__price">99.95$</span>
+        <li class="productItem col-8 col-sm-6 col-md-3 mb-4">
+          <img src="img/gallery-7.png" alt="Gallery image" class="productItem__image mb-2">
+          <span class="productItem__collection d-inline-block position-relative font-weight-bold">Le Collezioni</span>
+          <h3 class="productItem__name font-weight-md mb-0">Cadapetra Hoodie</h3>
+          <span class="productItem__price font-weight-md">99.95$</span>
         </li>
-        <li class="relatedProduct col-8 col-sm-6 col-md-3 mb-4">
-          <img src="img/gallery-8.png" alt="Gallery image" class="relatedProduct__image mb-2">
-          <span class="relatedProduct__collection">Le Collezioni</span>
-          <h3 class="relatedProduct__name">Cadapetra Hoodie</h3>
-          <span class="relatedProduct__price">99.95$</span>
+        <li class="productItem col-8 col-sm-6 col-md-3 mb-4">
+          <img src="img/gallery-8.png" alt="Gallery image" class="productItem__image mb-2">
+          <span class="productItem__collection d-inline-block position-relative font-weight-bold">Le Collezioni</span>
+          <h3 class="productItem__name font-weight-md mb-0">Cadapetra Hoodie</h3>
+          <span class="productItem__price font-weight-md">99.95$</span>
         </li>
       </ul> <!-- gallery list -->
 
       <div class="text-center">
-        <a class="link_color_inherited link_fontWeight_bold link_decorationOnHover_none link_decoration_bottomBorder py-1 text-uppercase" href="#">Explore more</a>
+        <a class="link_color_inherited font-weight-md link_decorationOnHover_none link_decoration_bottomBorder py-1 text-uppercase" href="#">Explore more</a>
       </div>
-    </div>
+    </div> <!-- related products -->
   </article>
 
   <section class="featureSection pt-3 mb-0">
     <div class="container">
-      <ul class="row">
+      <ul class="row list">
         <li class="col-sm-6 col-lg-3 mb-4">
           <div class="row align-items-center justify-content-center"> <!-- nested row -->
             <div class="d-flex feature__iconContainer rounded-circle bg-white">

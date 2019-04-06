@@ -2,57 +2,73 @@
 Variables
 ================================== */
 /* Colors --- */
+$dark: #23282D;
+$darker: #15171a;
+
 /* Breakpoints --- */
+$break-s: 576px;
+$break-m: 768px;
+$break-l: 992px;
+$break-xl: 1200px;
+
 /* ===============================
 Base Styles
 ================================== */
 .body {
-  color: #23282D; }
+  color: $dark;
+}
 
 /* list --- */
 .list {
   padding-left: 0;
   list-style: none;
-  margin: 0; }
+  margin: 0;
+}
 
 /* link --- */
+// modifiers
 .link_color_inherited {
-  color: inherit; }
-
+  color: inherit;
+}
 .link_decorationOnHover_none:hover {
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 .link_decoration_bottomBorder {
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+}
 
 /* select --- */
 .selectContainer {
   display: inline-block;
   width: 100%;
   border-radius: .15rem;
-  position: relative; }
-
+  position: relative;
+}
 .selectContainer__label {
   top: .4rem;
-  left: .9rem; }
-
+  left: .9rem;
+}
 .select {
   color: #65686B;
   width: 100%;
   padding: 1.7rem 0 .4rem 1rem;
   -webkit-appearance: none;
+
   transition-property: box-shadow, border-color;
   transition-duration: .15s;
-  transition-timing-function: ease-in-out; }
-  .select:focus {
+  transition-timing-function: ease-in-out;
+
+  &:focus {
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+}
 .selectContainer__downArrow {
   right: .8rem;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+}
 
 /* button --- */
 .productForm__btn {
@@ -61,15 +77,16 @@ Base Styles
   width: 100%;
   padding: 1rem;
   border: 1px solid;
-  border-radius: .15rem; }
-
+  border-radius: .15rem;
+}
 /* modifiers */
 .productForm__btn_bg_black {
   color: #fff;
-  background-color: #111; }
-
+  background-color: #111;
+}
 .productForm__btn_bg_grey {
-  background-color: #E5E5E5; }
+  background-color: #E5E5E5;
+}
 
 /* ===========================
 Navbar 
@@ -78,35 +95,48 @@ Navbar
 .navbar__searchInput {
   border: none;
   transition-property: border-color, box-shadow;
-  transition-duration: .15s; }
-  .navbar__searchInput:focus {
+  transition-duration: .15s;
+
+  &:focus {
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+}
 
 /* user/cart icons --- */
 .navbar__iconLink {
-  color: #23282D !important;
-  transition: color .15s; }
-  .navbar__iconLink:hover, .navbar__iconLink:focus {
-    color: rgba(35, 40, 45, 0.8) !important; }
+  color: $dark!important;
+  transition: color .15s;
+
+  &:hover,
+  &:focus {
+    color: rgba($color: $dark, $alpha: .8)!important;
+  }
+}
 
 /* ===========================
 Breadcrumb 
 ============================== */
 .breadcrumbBar {
-  background-color: #23282D;
-  z-index: 1; }
+  background-color: $dark;
+  z-index: 1;
+}
 
 /* Arrows --- */
 .breadcrumbBar__downArrowLink {
-  background-color: #15171a; }
+  background-color: #15171a;
+}
 
 .breadcrumbBar__arrowLink {
   color: #fff;
-  transition: color .1s; }
-  .breadcrumbBar__arrowLink:hover, .breadcrumbBar__arrowLink:focus {
-    color: rgba(255, 255, 255, 0.5) !important; }
+  transition: color .1s;
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, .5)!important;
+  }
+}
 
 /* ===================================
 Product
@@ -114,14 +144,15 @@ Product
 .product__oldPrice {
   color: #7D7F81;
   font-size: 1.1rem;
-  font-weight: 500; }
-
+  font-weight: 500;
+}
 .product__newPrice {
   font-size: 1.5rem;
-  font-weight: 500; }
-
+  font-weight: 500;
+}
 .product__description {
-  line-height: 1.7; }
+  line-height: 1.7;
+}
 
 /* ===================================
 Related Products
@@ -129,58 +160,69 @@ Related Products
 /* title --- */
 .relatedProducts__titleWord1 {
   font-size: 1.2rem;
-  letter-spacing: .8rem; }
-
+  letter-spacing: .8rem;
+}
 .relatedProducts__titleWord2 {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 /* ===================================
 Product item
 ====================================== */
 .productItem {
-  height: 27rem; }
+  height: 27rem;
+}
 
 /* collection */
 .productItem__collection {
-  padding-bottom: .8rem; }
-  .productItem__collection::after {
+  padding-bottom: .8rem;
+  
+  &::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: .5rem;
     background-color: #24282D;
     width: 4rem;
-    height: .14rem; }
+    height: .14rem;
+  }
+}
 
 /* name */
 .productItem__name {
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 /* image */
 .productItem__image {
   height: 18rem;
   object-fit: cover;
-  object-position: 50% 20%; }
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    .productItem__image {
-      height: 15rem; } }
+  object-position: 50% 20%;
+
+  @media screen and (min-width: $break-m) and (max-width: $break-l) {
+    height: 15rem;
+  }
+}
 
 /* ===========================
 Feature Section 
 ============================== */
 .featureSection {
-  background-color: #15171a; }
+  background-color: $darker;
+}
 
 /* icons --- */
 .feature__iconContainer {
   width: 3.4rem;
-  height: 3.4rem; }
+  height: 3.4rem;
+}
 
 /* ===============================
 Footer
 ================================== */
 .footer {
-  background-color: #000; }
+  background-color: #000;
+}
 
 /* subscription input */
 .subscriptionForm__input {
@@ -188,19 +230,27 @@ Footer
   border: none;
   border-bottom: 1px solid;
   background-color: transparent;
-  transition: border-width .2s; }
-  .subscriptionForm__input:focus {
+
+  transition: border-width .2s;
+
+  &:focus {
     outline: none;
-    border-width: 2px; }
-  .subscriptionForm__input::placeholder {
-    color: #fff; }
+    border-width: 2px;
+  }
+
+  &::placeholder {
+    color: #fff;
+  }
+}
 
 /* subscription button */
 .subscriptionForm__button {
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+}
 
 /* ===========================
 Bootstrap Extensions
 ============================== */
 .font-weight-md {
-  font-weight: 500; }
+  font-weight: 500;
+}
